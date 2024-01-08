@@ -1,0 +1,384 @@
+/* Shared styles started */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aqua;
+}
+.body_Container {
+  margin: 0 160px;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-family: "Merriweather", serif;
+}
+
+.bg_image {
+  background-repeat: no-repeat;
+  max-width: 1320px;
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.primary_heading {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-weight: 900;
+}
+.secondary_heading {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 28px;
+  font-weight: 400;
+}
+.text_main_section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
+}
+/* Shared styles ended */
+
+/* header section styles started */
+.header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 16px; /*I added this because this part helps the border radius to work perfectly even if there is a background color in header class*/
+}
+.header_image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/banner.png");
+}
+
+.header_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.greetings_secondary {
+  padding: 150px 200px 20px 200px;
+  box-sizing: border-box;
+}
+
+/* header section styles ended */
+
+/* body part started */
+/* Discount section started */
+.main {
+  margin: 0 140px;
+  /* background-color: rgb(165, 170, 166); */
+  border-radius: 15px;
+}
+
+.discount_section {
+  /* border: 1px solid black; */
+}
+.discount_number {
+  color: #f00;
+  text-align: center;
+  font-family: Inter;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 10px 0 50px 0;
+}
+.discount_message_primary {
+  color: #f00;
+  font-size: 24px;
+  font-weight: 500;
+}
+.discount_message_secondary {
+  color: #070211;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 10px 0 50px 0;
+}
+.new_year_image {
+  width: 800px;
+}
+/* Discount section ended */
+
+/* welcome section started */
+.welcome_image {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Vectorrr.png");
+}
+.welcome_message_container {
+  width: 700px;
+  padding: 125px 400px 125px 125px;
+}
+.welcome_heading {
+  letter-spacing: 7.04px;
+}
+
+.welcome_message {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 25px 0 50px 0;
+}
+.join_button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 50px;
+  background: none;
+  border: none;
+}
+/* welcome section ended */
+
+/* Address section started */
+.address_section {
+  padding: 100px 380px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+.address {
+  color: #070211;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+}
+.extra_style {
+  color: #f00;
+}
+.address_button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background: #f00;
+  padding: 16px 32px;
+  margin-top: 50px;
+}
+/* Address section ended */
+
+/* Comming Offer section started */
+.comming_offer_section {
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+}
+.flex_item {
+  flex: 1;
+}
+.offer_heading {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.offer_primary {
+  color: #070211;
+  font-size: 48px;
+  padding: 15px 0 20px 0;
+}
+.offer_message {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+.ellipse_border {
+  width: 463px;
+  height: 463px;
+  border-radius: 463px;
+  border: 15px solid #f00;
+  display: flex;
+  justify-content: center;
+  margin: 0 120px 0 50px;
+}
+.ellipse_img {
+  padding: 25px;
+}
+
+.offer_date {
+  color: #f00;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 135px;
+}
+.date_message {
+  padding-top: 15px;
+  margin-bottom: 75px;
+}
+.new_year_image2 {
+  background-image: url("../Images/Group\ 96.png");
+  width: 140px;
+}
+/* Comming Offer section ended */
+
+/* holiday offer section started */
+.holiday_section {
+  margin-bottom: 120px;
+}
+.holiday_heading {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.holiday_primary_heading {
+  margin: 10px 0 30px;
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+}
+.holiday_messages_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extra_style_holiday {
+  color: #f00;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+}
+.holiday_message {
+  margin: 0 160px;
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.holiday_images_container {
+  margin-top: 65px;
+  /* border: 1px solid black; */
+  background-image: url("../Images/Group\ 75.png"),
+    url("../Images/Rectangle_1.png"), url("../Images/Rectangle_2.png");
+  background-repeat: no-repeat;
+  height: 660px;
+  background-position: center left, top right, center bottom;
+  background-size: auto 660px, auto 430px, auto 230px;
+}
+.discount50_image {
+  float: right;
+  margin: 75px 275px 0 0;
+}
+/* holiday offer section ended */
+
+/* Portfolio section started */
+.portfolio_container {
+  margin-bottom: 120px;
+}
+.portfolio_message {
+  width: 800px;
+}
+.portfolio_card_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Portfolio section ended */
+
+/* Newsletter section started */
+.newsletter_container {
+  border-radius: 16px;
+  background: rgba(68, 0, 255, 0.05);
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.newsletter_image {
+  margin: 80px 0 20px 0;
+}
+.subscribe_button {
+  margin: 50px 0 80px 0;
+}
+.email_input {
+  color: rgba(7, 2, 17, 0.3);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 25px 180px 25px 30px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  margin-right: -5px;
+}
+.subscribe {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 24px 55px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background: #f00;
+}
+
+/* Newsletter section ended */
+
+/* footer section started */
+.footer {
+  background: #070211;
+  padding: 0 140px;
+  height: 600px;
+}
+.footer_address {
+  padding: 120px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 580px;
+}
+.physical_address {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.online_address {
+  margin-right: 150px;
+}
+.social_link {
+  margin: 50px auto;
+  text-align: center;
+}
+.single_social_link {
+  padding: 0 25px;
+}
+.footer_message {
+  padding: 50px 0 120px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 580px;
+}
+.unsubscribe_button {
+  background: none;
+  border: none;
+}
+.horizontal_line {
+  border-bottom: 0.1px solid #333;
+}
