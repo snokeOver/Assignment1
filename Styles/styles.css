@@ -4,13 +4,20 @@
   padding: 0;
 }
 body {
+  /*In given design, I found out that the total visible width is 1600px. My monitor screen resolution is 1920x1080. To differentiate the actual design area I gave a background color */
   background-color: aqua;
 }
 .body_Container {
+  /* 
+  ----> I have placed a 160px left-right  margin to match the design layout which is 1600px:(1600= 1920-2*160) 
+  ----> As This is not responsive design, when I watch this design in my laptop which resolution is (1366 x 768) the design becomes distorted.
+  ----> I have struggled more than 4+ hours to find out the real problem about the screen resolution.
+  ----> So, my humble request to examine my design in a monitor which maintains aspect ration like (1920 x 1080) or create a custom screen layout using browser developer mood if it is a laptop with display resolution (1366 x 768)
+  ----> I tried my best to code this design in a professional way and to reduce the repetition in code.
+ ---->  Thanks in advance.
+  */
   margin: 0 160px;
   background-color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-family: "Merriweather", serif;
 }
 
 .bg_image {
@@ -19,19 +26,47 @@ body {
   width: 100%;
   height: 600px;
   border-radius: 16px;
+  margin: 0 auto;
+}
+.primary_headings {
+  color: #070211;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+}
+.secondary_headings {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.primary_heading {
-  color: #fff;
+.primary_heading_bold {
+  color: #070211;
   font-family: Merriweather;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 900;
 }
-.secondary_heading {
-  color: #fff;
-  font-family: Merriweather;
-  font-size: 28px;
+.padding_primary_bold {
+  padding: 15px 0 20px 0;
+}
+.general_message {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
   font-weight: 400;
+}
+.general_message_width {
+  width: 800px;
+}
+.button_text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 .text_main_section {
   display: flex;
@@ -53,7 +88,10 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../Images/banner.png");
 }
-
+.header_heading_primary {
+  color: #fff;
+  font-size: 72px;
+}
 .header_message {
   display: flex;
   flex-direction: column;
@@ -66,13 +104,18 @@ body {
 }
 
 .greetings_secondary {
-  padding: 150px 200px 20px 200px;
+  padding: 150px 180px 20px 180px;
   box-sizing: border-box;
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 /* header section styles ended */
 
 /* body part started */
+
 /* Discount section started */
 .main {
   margin: 0 140px;
@@ -80,9 +123,6 @@ body {
   border-radius: 15px;
 }
 
-.discount_section {
-  /* border: 1px solid black; */
-}
 .discount_number {
   color: #f00;
   text-align: center;
@@ -92,15 +132,8 @@ body {
   font-weight: 700;
   padding: 10px 0 50px 0;
 }
-.discount_message_primary {
-  color: #f00;
-  font-size: 24px;
-  font-weight: 500;
-}
-.discount_message_secondary {
-  color: #070211;
-  font-size: 48px;
-  font-weight: 700;
+
+.discount_message {
   padding: 10px 0 50px 0;
 }
 .new_year_image {
@@ -123,24 +156,18 @@ body {
 }
 .welcome_heading {
   letter-spacing: 7.04px;
+  color: #fff;
+  font-size: 64px;
 }
 
 .welcome_message {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Inter;
   font-size: 18px;
-  font-weight: 400;
   margin: 25px 0 50px 0;
 }
 .join_button {
-  color: #fff;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-left: 50px;
   background: none;
-  border: none;
 }
 /* welcome section ended */
 
@@ -165,11 +192,6 @@ body {
   color: #f00;
 }
 .address_button {
-  color: #fff;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  border: none;
   border-radius: 8px;
   background: #f00;
   padding: 16px 32px;
@@ -186,23 +208,7 @@ body {
 .flex_item {
   flex: 1;
 }
-.offer_heading {
-  color: #f00;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
-}
-.offer_primary {
-  color: #070211;
-  font-size: 48px;
-  padding: 15px 0 20px 0;
-}
-.offer_message {
-  color: rgba(7, 2, 17, 0.6);
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-}
+
 .ellipse_border {
   width: 463px;
   height: 463px;
@@ -237,24 +243,20 @@ body {
 .holiday_section {
   margin-bottom: 120px;
 }
-.holiday_heading {
-  color: #070211;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
-}
-.holiday_primary_heading {
-  margin: 10px 0 30px;
-  color: #070211;
-  font-family: Merriweather;
-  font-size: 72px;
-  font-weight: 900;
-}
 .holiday_messages_container {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
 }
+.holiday_heading {
+  color: #070211;
+}
+.holiday_primary_heading {
+  margin: 10px 0 30px;
+  font-size: 72px;
+}
+
 .extra_style_holiday {
   color: #f00;
   font-family: Merriweather;
@@ -263,11 +265,7 @@ body {
 }
 .holiday_message {
   margin: 0 160px;
-  color: rgba(7, 2, 17, 0.6);
-  font-family: Inter;
-  font-size: 20px;
   font-weight: 500;
-  text-align: center;
 }
 .holiday_images_container {
   margin-top: 65px;
@@ -289,22 +287,27 @@ body {
 .portfolio_container {
   margin-bottom: 120px;
 }
-.portfolio_message {
-  width: 800px;
+.portfolio_message_width {
+  width: 880px;
 }
 .portfolio_card_container {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.single_card {
+  margin-bottom: 18px;
+}
+.single_card:hover {
+  opacity: 0.5;
+}
 /* Portfolio section ended */
 
 /* Newsletter section started */
 .newsletter_container {
   border-radius: 16px;
-  background: rgba(68, 0, 255, 0.05);
+  background: rgba(255, 0, 0, 0.05);
   margin-bottom: 120px;
   display: flex;
   flex-direction: column;
@@ -314,6 +317,7 @@ body {
 .newsletter_image {
   margin: 80px 0 20px 0;
 }
+
 .subscribe_button {
   margin: 50px 0 80px 0;
 }
@@ -328,13 +332,10 @@ body {
   margin-right: -5px;
 }
 .subscribe {
-  color: #fff;
-  font-family: Inter;
-  font-size: 20px;
   font-weight: 600;
   padding: 24px 55px;
-  border: none;
   border-radius: 0 50px 50px 0;
+  text-transform: none;
   background: #f00;
 }
 
@@ -344,7 +345,6 @@ body {
 .footer {
   background: #070211;
   padding: 0 140px;
-  height: 600px;
 }
 .footer_address {
   padding: 120px 0 50px 0;
@@ -354,13 +354,10 @@ body {
 }
 .physical_address {
   color: #fff;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
   line-height: 35px;
 }
 .online_address {
-  margin-right: 150px;
+  margin-right: 100px;
 }
 .social_link {
   margin: 50px auto;
@@ -378,7 +375,11 @@ body {
 .unsubscribe_button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .horizontal_line {
   border-bottom: 0.1px solid #333;
 }
+
+/* Footer secion ended */
+/* Body section ended */
