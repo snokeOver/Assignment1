@@ -142,6 +142,10 @@ body {
 /* Discount section ended */
 
 /* welcome section started */
+.welcome_section_container {
+  display: flex;
+  align-items: center;
+}
 .welcome_image {
   background-image: linear-gradient(
       90deg,
@@ -151,8 +155,7 @@ body {
     url("../Images/Vectorrr.png");
 }
 .welcome_message_container {
-  width: 700px;
-  padding: 125px 400px 125px 125px;
+  padding: 125px 0 125px 125px;
 }
 .welcome_heading {
   letter-spacing: 7.04px;
@@ -169,6 +172,14 @@ body {
   margin-left: 50px;
   background: none;
 }
+.welcome_2024 {
+  width: 320px;
+  height: 465px;
+  margin-right: 140px;
+  /*I have tried all options of mix-blend-mode but failed to blend that white part of the foreground image with the background imaage. Finally, choose the lighten option which fits best for me*/
+  mix-blend-mode: lighten;
+}
+
 /* welcome section ended */
 
 /* Address section started */
@@ -269,13 +280,13 @@ body {
 }
 .holiday_images_container {
   margin-top: 65px;
-  /* border: 1px solid black; */
   background-image: url("../Images/Group\ 75.png"),
     url("../Images/Rectangle_1.png"), url("../Images/Rectangle_2.png");
   background-repeat: no-repeat;
   height: 660px;
   background-position: center left, top right, center bottom;
   background-size: auto 660px, auto 430px, auto 230px;
+  /*I have tried many ways but failed to blend Group 75 image with the background image and color.*/
 }
 .discount50_image {
   float: right;
@@ -358,6 +369,9 @@ body {
 }
 .online_address {
   margin-right: 100px;
+}
+.online_address img {
+  vertical-align: middle;
 }
 .social_link {
   margin: 50px auto;
